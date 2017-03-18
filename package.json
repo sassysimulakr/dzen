@@ -1,0 +1,29 @@
+{
+  "name": "dzen",
+  "version": "0.0.1",
+  "description": "Gives clipped knowledge",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sadwarrior/dzen.git"
+  },
+  "keywords": [
+    "dzen",
+    "philosophy",
+    "quote"
+  ],
+  "author": "Kornilov Yaroslav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sadwarrior/dzen/issues"
+  },
+  "homepage": "https://github.com/sadwarrior/dzen#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "jade": "^1.11.0",
+    "node-static": "^0.7.9"
+  }
+}

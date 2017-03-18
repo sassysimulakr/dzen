@@ -1,0 +1,12 @@
+#text {
+  font-family: Righteous;
+  text-align: center;
+  display: block;
+  margin: 20% 10%;
+  color: #1D3557;
+}
+
+#text:hover {
+  color: #E63946;
+  font-size: 110%;
+}
