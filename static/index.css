@@ -1,12 +1,19 @@
 #text {
-  font-family: 'Arvo', serif;
-  text-align: center;
-  display: block;
-  margin: 20% 10%;
-  color: #1D3557;
+    font-family: 'Arvo', serif;
+    text-align: center;
+    display: block;
+    margin: auto;
+    color: #1D3557;
+    max-width: 30%;
+}
+
+img {
+    display: block;
+    margin: 50px auto;
+    width: 20%;
 }
 
 #text:hover {
-  color: #E63946;
-  font-size: 110%;
+    color: #E63946;
+    font-size: 110%;
 }
