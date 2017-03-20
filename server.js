@@ -150,7 +150,14 @@ var message = `
 `;
 
 app.get('/', function(req, res) {
-    res.render('./views/page.jade', {
+    res.render('./views/index.jade', {
+        quote: obfuscate(message)
+    });
+});
+
+app.get('/toSend', function(req, res) {
+    console.log('got it baby!');
+    res.render('./views/toSend.jade', {
         quote: obfuscate(message)
     });
 });

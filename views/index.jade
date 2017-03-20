@@ -7,4 +7,8 @@ html
     link(href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet")
   body
       img(id="preImg" src='https://i.ytimg.com/vi/MTtzwQ6uaMA/maxresdefault.jpg')
-      block content
+      .quote-box
+        .quote-text
+          span#text= quote
+      script(src='https://code.jquery.com/jquery-3.1.1.min.js', integrity='sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=', crossorigin='anonymous')
+      script(src='static/index.js')

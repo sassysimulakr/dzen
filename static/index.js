@@ -1,8 +1,8 @@
 $(document).ready(
     function() {
         $('#text').click(function() {
-            $.get("/", function(data) {
-                  $("body").html(data)
+            $.get("/toSend", function(data) {
+                  $(".quote-text").replaceWith(data);
             })
         })
     }
