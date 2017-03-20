@@ -150,7 +150,7 @@ var message = `
 `;
 
 app.get('/', function(req, res) {
-    res.render('./views/index.jade', {
+    res.render('./views/page.jade', {
         quote: obfuscate(message)
     });
 });
