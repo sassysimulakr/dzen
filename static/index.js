@@ -1,6 +1,6 @@
 $(document).ready(
     function() {
-        $('#text').click(function() {
+        $('html').click(function() {
             $.get("/toSend", function(data) {
                   $(".quote-text").replaceWith(data);
             })
