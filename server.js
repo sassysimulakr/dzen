@@ -1,5 +1,7 @@
 var express = require('express');
 var app = express();
+var http = require('http').Server(app);
+var io = require('socket.io')(http);
 fs = require('fs');
 var pub = __dirname;
 
@@ -162,7 +164,13 @@ app.get('/toSend', function(req, res) {
     });
 });
 
-app.listen(3001, function() {
+io.on('connection', function(socket){
+  console.log('a user connected');
+  socket.on('disconnect', function(){
+    console.log('user disconnected');
+});
+
+http.listen(3001, function() {
     console.log('App listening on port 3001!');
 });
 
